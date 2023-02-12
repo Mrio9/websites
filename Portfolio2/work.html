@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <!-- <li><a href="#">Shop</a></li> -->
-                    
+
                 </ul>
             </nav>
         </div>
@@ -27,9 +28,24 @@
     <div id="work">
         <div class="container">
             <h1>Selected Work</h1>
-            <div class="maindiv">
-                
+            <section aria-label="paintings">
+            <div class = "carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button = "prev">&#8592;</button>
+                <button class="carousel-button next" data-carousel-button = "next">&#8594;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="beawesome.jpeg" alt="img1">
+                    </li>
+                    <li class="slide">
+                        <img src="background.jpg" alt="img2">
+                    </li>
+                    <li class="slide">
+                        <img src="beawesome.jpeg" alt="img3">
+                    </li>
+                </ul>
+            
             </div>
+        </section>
         </div>
     </div>
     <div id="footer">
@@ -39,6 +55,7 @@
             </p>
         </div>
     </div>
+    
 </body>
 
 </html>
