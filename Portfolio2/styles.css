@@ -90,7 +90,7 @@ nav ul li a {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 #name p {
@@ -138,7 +138,7 @@ nav ul li a {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .row {
@@ -170,6 +170,7 @@ nav ul li a {
 /* contact */
 #contact {
     position: relative;
+    align-items: center;
 }
 #contact::before {
     content: "";
@@ -181,77 +182,55 @@ nav ul li a {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
-
-.contact-left {
+#contact h1{
     position: relative;
-    flex-basis: 35%;
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
 }
-
-.contact-right {
+.main {
     position: relative;
-    flex-basis: 60%;
-}
-
-.contact-left p {
-    margin-top: 30px;
-}
-
-.contact-left p i {
-    color: red;
-    margin-right: 15px;
-    font-size: 25px;
-}
-
-.social-icon {
-    margin-top: 30px;
-}
-
-.social-icon a {
-    text-decoration: none;
-    margin-right: 15px;
-    font-size: 30px;
-    color: white;
-    display: inline-block;
-    transition: transform 0.5s;
-}
-
-.social-icon a:hover {
-    color: red;
-    transform: translateY(-5px);
+    padding-top: 20px;
+    margin-top: 40px;
+    border: 2px solid white;
+    width: 50%;
+    transform: translate(50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 40px;
 }
 
 .btn.btn2 {
     display: inline-block;
-    color: white;
-    background: black;
+    color: black;
+    background: white;
     transition: background 0.5s;
 }
 
 .btn.btn2:hover {
-    background: red;
-}
-
-.contact-right form {
-    width: 100%;
-
+    background: black;
+    color: white;
 }
 
 form input,
 form textarea {
-    width: 100%;
+    width: 70%;
     border: 0;
     outline: none;
     background: #262626;
     padding: 15px;
     margin: 15px 0;
+    margin-left: 15%;
     color: white;
     font-size: 18px;
-    border-radius: 6px;
 }
-
+form textarea{
+    height: 288px;
+}
 form btn2 {
     padding: 14px;
     font-size: 18px;
@@ -263,16 +242,16 @@ form btn2 {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid red;
     padding: 14px 50px;
-    border-radius: 6px;
     text-decoration: none;
     color: white;
     transition: background 0.5s;
+    margin-left: 40%;
 }
 
 .btn:hover {
-    background: red;
+    background: black;
+    color: white;
 
 }
 
@@ -295,7 +274,7 @@ form btn2 {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 #work h1 {
@@ -318,6 +297,7 @@ form btn2 {
     width: 80vw;
     height: 80vh;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .carousel>ul {
